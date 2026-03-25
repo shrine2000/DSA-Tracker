@@ -1,7 +1,7 @@
 {
   "name": "dsa-tracker",
   "version": "1.0.0",
-  "homepage": "https://shrine2000.github.io/design-patterns/",
+  "homepage": "https://shrine2000.github.io/DSA-Tracker/",
   "type": "module",
   "description": "",
   "main": "index.js",
