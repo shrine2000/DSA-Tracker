@@ -43,10 +43,6 @@ export const renderProblemList = (problems: Problem[], activeFilter: string) => 
         ${categories.map(cat => `
           <button class="filter-btn ${activeFilter === cat ? 'active' : ''}" data-filter="${cat}">${cat}</button>
         `).join('')}
-        <button class="random-btn" id="random-unsolved" title="Pick a random unsolved problem">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"></path><path d="M4 20L21 3"></path><path d="M21 16v5h-5"></path><path d="M15 15l6 6"></path><path d="M4 4l5 5"></path></svg>
-          Shuffle
-        </button>
       </div>
 
       <div class="problem-list">

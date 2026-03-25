@@ -36,6 +36,15 @@ export const renderDashboard = (totalCount: number) => {
           <p class="stat-value" style="color: ${weekend ? 'var(--warning)' : 'var(--text-dim)'}">${weekend ? 'Active' : 'Locked'}</p>
         </div>
       </div>
+      <div class="glass-card stat-item" id="random-unsolved" style="cursor: pointer; border-color: var(--primary); background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);">
+        <div class="stat-icon primary">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"></path><path d="M4 20L21 3"></path><path d="M21 16v5h-5"></path><path d="M15 15l6 6"></path><path d="M4 4l5 5"></path></svg>
+        </div>
+        <div>
+          <p class="stat-label">Quick Start</p>
+          <p class="stat-value" style="color: var(--primary)">Shuffle</p>
+        </div>
+      </div>
     </div>
   `;
 };
