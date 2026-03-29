@@ -12,9 +12,10 @@ node_modules/
 jspm_packages/
 
 # Build outputs
-dist/
-dist-ssr/
-*.local
+# dist/
+# dist-ssr/
+!assets/
+!index.html
 
 # IDEs and editors
 .vscode/*

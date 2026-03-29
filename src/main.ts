@@ -92,8 +92,11 @@ const attachEventListeners = () => {
     // Filter clicks
     document.querySelectorAll('.filters .filter-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            currentFilter = (e.currentTarget as HTMLButtonElement).dataset.filter!;
-            render();
+            const filter = (e.currentTarget as HTMLButtonElement).dataset.filter;
+            if (filter) {
+                currentFilter = filter;
+                render();
+            }
         });
     });
 
@@ -101,9 +104,12 @@ const attachEventListeners = () => {
     document.querySelectorAll('.mark-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
-            const id = parseInt((e.currentTarget as HTMLButtonElement).dataset.id!);
-            markProblemAsDone(id);
-            render();
+            const idStr = (e.currentTarget as HTMLButtonElement).dataset.id;
+            if (idStr) {
+                const id = parseInt(idStr);
+                markProblemAsDone(id);
+                render();
+            }
         });
     });
 
@@ -153,10 +159,13 @@ const attachEventListeners = () => {
     // Problem card clicks (Revision Modal)
     document.querySelectorAll('[data-problem-id]').forEach(card => {
         card.addEventListener('click', () => {
-            const id = parseInt((card as HTMLDivElement).dataset.problemId!);
-            const allProblems = getAllProblems();
-            const problem = allProblems.find(p => p.id === id);
-            if (problem) showRevisionModal(problem);
+            const idStr = (card as HTMLDivElement).dataset.problemId;
+            if (idStr) {
+                const id = parseInt(idStr);
+                const allProblems = getAllProblems();
+                const problem = allProblems.find(p => p.id === id);
+                if (problem) showRevisionModal(problem);
+            }
         });
     });
 };
