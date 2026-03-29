@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Geist Sans';
-    src: url('/fonts/geist-sans/Geist-Variable.woff2') format('woff2-variations');
+    src: url('../assets/fonts/geist-sans/Geist-Variable.woff2') format('woff2-variations');
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Geist Mono';
-    src: url('/fonts/geist-mono/GeistMono-Variable.woff2') format('woff2-variations');
+    src: url('../assets/fonts/geist-mono/GeistMono-Variable.woff2') format('woff2-variations');
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Geist Pixel';
-    src: url('/fonts/geist-pixel/GeistPixel-Square.woff2') format('woff2');
+    src: url('../assets/fonts/geist-pixel/GeistPixel-Square.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
